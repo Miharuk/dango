@@ -54,11 +54,21 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-pink-300 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                if(first == 1){flag = 4;first = 0;}
-                if(flag == 1){console.log(number2 + number1);setCount(number2 + number1);number2 = number2 + number1;
-                }else if(flag == 2){console.log(number2 - number1);setCount(number2 - number1);number2 = number2 - number1;
-                }else if(flag == 3){console.log(number2 * number1);setCount(number2 * number1);number2 = number2 * number1;
-                }else if(flag == 4){console.log(number2 / number1);setCount(number2 / number1);number2 = number2 / number1;}
+                if(first == 1){flag = 4;}
+                if(flag == 1){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 + number1};
+                }else if(flag == 2){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 - number1};
+                }else if(flag == 3){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 * number1};
+                }else if(flag == 4){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 / number1}};
+                console.log(number2);
+                setCount(number2);
                 number1 = 0;
                 flag = 4;
               }}>
@@ -97,11 +107,21 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-pink-300 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                if(first == 1){flag = 3;first = 0;}
-                if(flag == 1){console.log(number2 + number1);setCount(number2 + number1);number2 = number2 + number1;
-                }else if(flag == 2){console.log(number2 - number1);setCount(number2 - number1);number2 = number2 - number1;
-                }else if(flag == 3){console.log(number2 * number1);setCount(number2 * number1);number2 = number2 * number1;
-                }else if(flag == 4){console.log(number2 / number1);setCount(number2 / number1);number2 = number2 / number1;}
+                if(first == 1){flag = 3;}
+                if(flag == 1){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 + number1};
+                }else if(flag == 2){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 - number1};
+                }else if(flag == 3){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 * number1};
+                }else if(flag == 4){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 / number1}};
+                console.log(number2);
+                setCount(number2);
                 number1 = 0;
                 flag = 3;
               }}>
@@ -140,11 +160,21 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-pink-300 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                if(first == 1){flag = 2;first = 0;}
-                if(flag == 1){console.log(number2 + number1);setCount(number2 + number1);number2 = number2 + number1;
-                }else if(flag == 2){console.log(number2 - number1);setCount(number2 - number1);number2 = number2 - number1;
-                }else if(flag == 3){console.log(number2 * number1);setCount(number2 * number1);number2 = number2 * number1;
-                }else if(flag == 4){console.log(number2 / number1);setCount(number2 / number1);number2 = number2 / number1;}
+                if(first == 1){flag = 2;}
+                if(flag == 1){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 + number1};
+                }else if(flag == 2){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 - number1};
+                }else if(flag == 3){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 * number1};
+                }else if(flag == 4){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 / number1}};
+                console.log(number2);
+                setCount(number2);
                 number1 = 0;
                 flag = 2;
               }}>
@@ -185,11 +215,21 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-pink-300 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                if(first == 1){flag = 1;first = 0;}
-                if(flag == 1){console.log(number2 + number1);setCount(number2 + number1);number2 = number2 + number1;
-                }else if(flag == 2){console.log(number2 - number1);setCount(number2 - number1);number2 = number2 - number1;
-                }else if(flag == 3){console.log(number2 * number1);setCount(number2 * number1);number2 = number2 * number1;
-                }else if(flag == 4){console.log(number2 / number1);setCount(number2 / number1);number2 = number2 / number1;}
+                if(first == 1){flag = 1;}
+                if(flag == 1){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 + number1};
+                }else if(flag == 2){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 - number1};
+                }else if(flag == 3){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 * number1};
+                }else if(flag == 4){
+                  if(first == 1){number2 = number1;first = 0;
+                  }else{number2 = number2 / number1}};
+                console.log(number2);
+                setCount(number2);
                 number1 = 0;
                 flag = 1;
               }}>
@@ -201,6 +241,7 @@ const IndexPage: NextPage = (): ReactElement => {
                 number1 = 0;
                 number2 = 0;
                 flag = 0;
+                first = 1;
                 setCount(0);
               }}>
               <span className="select-none text-xl">C</span>
