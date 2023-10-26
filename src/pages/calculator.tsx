@@ -11,8 +11,6 @@ const IndexPage: NextPage = (): ReactElement => {
   const [flag, setFlag] = useState<number>(0);
   const [first, setFirst] = useState<number>(1);
 
-  //const [labourHours, setLabourHours] = useState<string>('0');
-
   return (
     <>
       <div className="m-10 p-4 w-2/3 mx-auto shadow-lg border-2 rounded-2xl">
