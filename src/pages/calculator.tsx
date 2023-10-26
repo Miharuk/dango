@@ -2,11 +2,12 @@ import { NextPage } from 'next';
 import React, { ReactElement, useState } from 'react';
 import { Button } from '../components/Button';
 
-var number1 = 0;
-var number2 = 0;
-var hoge = '';
-var flag = 0;
-var first = 1;
+const [number1, setNumber1] = useState<number>(0);
+const [number2, setNumber2] = useState<number>(0);
+const [hoge, setHoge] = useState<string>('');
+const [flag, setFlag] = useState<number>(0);
+const [first, setFirst] = useState<number>(1);
+
 
 const IndexPage: NextPage = (): ReactElement => {
   const [count, setCount] = useState<number>(0);
@@ -24,8 +25,8 @@ const IndexPage: NextPage = (): ReactElement => {
           <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '7';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '7');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -34,8 +35,8 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '8';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '8');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -44,8 +45,8 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '9';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '9');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -54,31 +55,31 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-pink-300 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                if(first == 1){flag = 4;}
+                if(first == 1){setFlag(4);}
                 if(flag == 1){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 + number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 + number1)};
                 }else if(flag == 2){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 - number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 - number1)};
                 }else if(flag == 3){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 * number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 * number1)};
                 }else if(flag == 4){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 / number1}};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 / number1)}};
                 console.log(number2);
                 setCount(number2);
-                number1 = 0;
-                flag = 4;
+                setNumber1(0);
+                setFlag(4);
               }}>
               <span className="select-none text-xl">/</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '4';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '4');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -87,8 +88,8 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '5';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '5');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -97,8 +98,8 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '6';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '6');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -107,31 +108,31 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-pink-300 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                if(first == 1){flag = 3;}
+                if(first == 1){setFlag(3);}
                 if(flag == 1){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 + number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 + number1)};
                 }else if(flag == 2){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 - number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 - number1)};
                 }else if(flag == 3){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 * number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 * number1)};
                 }else if(flag == 4){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 / number1}};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 / number1)}};
                 console.log(number2);
                 setCount(number2);
-                number1 = 0;
-                flag = 3;
+                setNumber1(0);
+                setFlag(3);
               }}>
               <span className="select-none text-xl">*</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '1';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '1');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -140,8 +141,8 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '2';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '2');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -150,8 +151,8 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '3';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '3');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -160,31 +161,31 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-pink-300 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                if(first == 1){flag = 2;}
+                if(first == 1){setFlag(2);}
                 if(flag == 1){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 + number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 + number1)};
                 }else if(flag == 2){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 - number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 - number1)};
                 }else if(flag == 3){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 * number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 * number1)};
                 }else if(flag == 4){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 / number1}};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 / number1)}};
                 console.log(number2);
                 setCount(number2);
-                number1 = 0;
-                flag = 2;
+                setNumber1(0);
+                setFlag(2);
               }}>
               <span className="select-none text-xl">-</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '.';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '.');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -193,8 +194,8 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                hoge = `${number1}` + '0';
-                number1 = Number(hoge);
+                setHoge(`${number1}` + '0');
+                setNumber1(Number(hoge));
                 console.log(number1);
                 setCount(number1);
               }}>
@@ -215,33 +216,33 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-pink-300 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                if(first == 1){flag = 1;}
+                if(first == 1){setFlag(1);}
                 if(flag == 1){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 + number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 + number1)};
                 }else if(flag == 2){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 - number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 - number1)};
                 }else if(flag == 3){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 * number1};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 * number1)};
                 }else if(flag == 4){
-                  if(first == 1){number2 = number1;first = 0;
-                  }else{number2 = number2 / number1}};
+                  if(first == 1){setNumber2(number1);setFirst(0);
+                  }else{setNumber2(number2 / number1)}};
                 console.log(number2);
                 setCount(number2);
-                number1 = 0;
-                flag = 1;
+                setNumber1(0);
+                setFlag(1);
               }}>
               <span className="select-none text-xl">+</span>
             </Button>
             <Button
               className="py-2 bg-green-400 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                number1 = 0;
-                number2 = 0;
-                flag = 0;
-                first = 1;
+                setNumber1(0);
+                setNumber2(0);
+                setFlag(0);
+                setFirst(1);
                 setCount(0);
               }}>
               <span className="select-none text-xl">C</span>
