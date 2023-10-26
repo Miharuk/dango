@@ -22,30 +22,33 @@ const IndexPage: NextPage = (): ReactElement => {
           <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '7');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}7`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">7</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '8');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}8`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">8</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '9');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}9`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">9</span>
             </Button>
@@ -75,30 +78,33 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '4');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}4`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">4</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '5');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}5`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">5</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '6');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}6`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">6</span>
             </Button>
@@ -128,30 +134,33 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '1');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}1`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">1</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '2');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}2`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">2</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '3');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}3`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">3</span>
             </Button>
@@ -181,20 +190,22 @@ const IndexPage: NextPage = (): ReactElement => {
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '.');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}.`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">.</span>
             </Button>
             <Button
               className="py-2 bg-cyan-600 text-white rounded border border-gray-200 cursor-pointer"
               onClick={() => {
-                setHoge(`${number1}` + '0');
-                setNumber1(Number(hoge));
-                console.log(number1);
-                setCount(number1);
+                const fuga = `${number1}0`;
+                setHoge(fuga);
+                setNumber1(Number(fuga));
+                console.log(fuga);
+                setCount(Number(fuga));
               }}>
               <span className="select-none text-xl">0</span>
             </Button>
