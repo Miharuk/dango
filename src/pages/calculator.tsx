@@ -2,15 +2,14 @@ import { NextPage } from 'next';
 import React, { ReactElement, useState } from 'react';
 import { Button } from '../components/Button';
 
-const [number1, setNumber1] = useState<number>(0);
-const [number2, setNumber2] = useState<number>(0);
-const [hoge, setHoge] = useState<string>('');
-const [flag, setFlag] = useState<number>(0);
-const [first, setFirst] = useState<number>(1);
-
 
 const IndexPage: NextPage = (): ReactElement => {
   const [count, setCount] = useState<number>(0);
+  const [number1, setNumber1] = useState<number>(0);
+  const [number2, setNumber2] = useState<number>(0);
+  const [hoge, setHoge] = useState<string>('');
+  const [flag, setFlag] = useState<number>(0);
+  const [first, setFirst] = useState<number>(1);
 
   //const [labourHours, setLabourHours] = useState<string>('0');
 
